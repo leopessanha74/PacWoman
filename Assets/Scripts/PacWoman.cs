@@ -19,6 +19,7 @@ public class PacWoman : MonoBehaviour
     public Text scoreText;
     public int lives = 3;
     public Text livesText;
+    bool facingWall;
 
     void Awake()
     {
@@ -37,7 +38,10 @@ public class PacWoman : MonoBehaviour
     void ChangePosition(Vector2 _direction) //Travelling TurningPoint to TurningPoint
     {
         //direction = _direction;
-        
+        if (facingWall)
+        {
+            direction = _direction;
+        }
         if(_direction != direction)
         {
             nextDirection = _direction;
@@ -119,10 +123,12 @@ public class PacWoman : MonoBehaviour
                     moveToTurningPoint = CanMove(direction);
                     if (moveToTurningPoint == null)
                     {
+                        facingWall = true;
                         direction = Vector2.zero;
                     }
                     else
                     {
+                        facingWall = false;
                         targetTurningPoint = moveToTurningPoint;
                         previousTurningPoint = currentTurningPoint;
                         currentTurningPoint = null;
@@ -130,6 +136,7 @@ public class PacWoman : MonoBehaviour
                 }
                 else
                 {
+                    facingWall = false;
                     direction = nextDirection;
                     targetTurningPoint = moveToTurningPoint;
                     previousTurningPoint = currentTurningPoint;
@@ -139,7 +146,11 @@ public class PacWoman : MonoBehaviour
             else if (direction != Vector2.zero)
             {
                 transform.position += (Vector3)direction * speed * Time.deltaTime;
-            } else transform.position += (Vector3)nextDirection * speed * Time.deltaTime;
+            }
+            else if (facingWall != true)
+            {
+                transform.position += (Vector3)nextDirection * speed * Time.deltaTime;
+            }
         }
     }
     float DistanceToPreviousTurningPoint(Vector2 _targetPosition)
