@@ -7,6 +7,8 @@ public class TurningPoint : MonoBehaviour
     public TurningPoint[] neighborsTurningPoints;
     public Vector2[] directionToNeighborTurningPoint;
     public bool isPortal;
+    public bool ghostHouse;
+    public bool ghostHouseEntrance;
     public GameObject destinationPortal;
 
     void Awake()

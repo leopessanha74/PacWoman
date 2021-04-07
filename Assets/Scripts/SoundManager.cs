@@ -6,14 +6,15 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager SMinstance = null;
-    private AudioSource pacManAS;
-    private AudioSource ghostAS;
-    private AudioSource oneShotAS;
+    public AudioSource pacManAS;
+    public AudioSource ghostAS;
+    public AudioSource oneShotAS;
     public AudioClip eatingDots;
     public AudioClip eatingGhost;
     public AudioClip ghostMove;
     public AudioClip pacManDies;
     public AudioClip powerUp;
+    public AudioClip frightened;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,7 @@ public class SoundManager : MonoBehaviour
         ghostAS = audioSorces[1];
         oneShotAS = audioSorces[2];
 
-        PlayClipOnLoop(pacManAS,eatingDots);
+        PlayClipOnLoop(ghostAS,ghostMove);
     }
 
     public void PlayClipOnLoop(AudioSource _source, AudioClip _clip)

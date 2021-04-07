@@ -6,151 +6,174 @@ using UnityEngine.UI;
 
 public class PacWoman : MonoBehaviour
 {
-    public Vector2 direction = Vector2.zero;
+    [SerializeField] float speed;
+
+    public Vector2 currentDirection = Vector2.zero;
     public Vector2 nextDirection;
-    public TurningPoint currentTurningPoint;
-    public TurningPoint targetTurningPoint;
-    public TurningPoint previousTurningPoint;
+    public TurningPoint currentTurningPoint, targetTurningPoint, previousTurningPoint, startingTurningPoint;
     public Mapa mapa;
     [SerializeField] Sprite pausedSprite;
     private SoundManager soundManager;
-    [SerializeField] float speed;
     public int score = 0;
     public Text scoreText;
     public int lives = 3;
     public Text livesText;
     bool facingWall;
+    public bool canMove = true;
+    public RuntimeAnimatorController pacman;
+    public RuntimeAnimatorController pacManDeath;
 
     void Awake()
     {
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
-        currentTurningPoint = GetTurningPointAtPosition(transform.position);
-        previousTurningPoint = currentTurningPoint;
-        direction = Vector2.left;
     }
-
     private void Start()
     {
-        //ChangePosition(direction);
+        if (GetTurningPointAtPosition(transform.position) != null)
+        {
+            currentTurningPoint = GetTurningPointAtPosition(transform.position);
+        }
+        startingTurningPoint = currentTurningPoint;
+        previousTurningPoint = currentTurningPoint;
+        currentDirection = Vector2.left;
+        ChangePosition(currentDirection);
+    }
+    void FixedUpdate()
+    {
+        //scoreText.text = "Score:" + score.ToString();
+        //livesText.text = "Lives:" + lives.ToString();
+        if (canMove)
+        {
+            CheckInput();
+            MovePacman();
+            UpdateOrientation();
+            UpdateEatingAnimation();
+        }
     }
 
-
-    void ChangePosition(Vector2 _direction) //Travelling TurningPoint to TurningPoint
+    public void Restart()
     {
-        //direction = _direction;
-        if (facingWall)
+        canMove = true;
+        GetComponent<Animator>().runtimeAnimatorController = pacman;
+        GetComponent<Animator>().enabled = true;
+        GetComponent<SpriteRenderer>().enabled = true ;
+        transform.position = startingTurningPoint.transform.position;
+        currentTurningPoint = startingTurningPoint;
+        previousTurningPoint = startingTurningPoint;
+        currentDirection = Vector2.left;
+        nextDirection = Vector2.left;
+        ChangePosition(currentDirection);
+    }
+    private void OnTriggerEnter2D(Collider2D _other)
+    {
+        if (_other.CompareTag("Dots"))
         {
-            direction = _direction;
+            score++;
+            if (!soundManager.oneShotAS.isPlaying)
+            {
+                soundManager.PlayOneShot(soundManager.eatingDots);
+            }
+                         
+            Destroy(_other.gameObject);
         }
-        if(_direction != direction)
+        if (_other.CompareTag("Ghost"))
+        {
+            if (_other.GetComponent<Ghost>().currentMode == Ghost.Mode.Frightened)
+            {
+                soundManager.PlayOneShot(soundManager.eatingGhost);
+                _other.GetComponent<Ghost>().HasBeenEaten();
+                //animate ghost back to house
+                //Keep score
+            }
+            else if(_other.GetComponent<Ghost>().currentMode != Ghost.Mode.Eaten)
+            {
+                mapa.StartDeath();
+            }
+        }
+        if (_other.CompareTag("Pills"))
+        {
+            GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost");
+            foreach (GameObject go in ghosts)
+            {
+                go.GetComponent<Ghost>().StartFrightenedMode();
+            }
+            Destroy(_other.gameObject);
+        }
+    }
+    void ChangePosition(Vector2 _direction)
+    {
+        //We wanna store a next direction only if it's not equal to the current direction
+        if(_direction != currentDirection)
         {
             nextDirection = _direction;
         }
-        
 
-
-        /*
-        if(currentTurningPoint != null)
+        if (currentTurningPoint != null)//If I am in a TurningPoint
         {
+            //Check if I can move in the direction passed as an argument
             TurningPoint moveToTurningPoint = CanMove(_direction);
-            if (moveToTurningPoint != null)
+            if (moveToTurningPoint != null)//If I can
             {
-                direction = _direction;
+                currentDirection = _direction;
                 targetTurningPoint = moveToTurningPoint;
                 previousTurningPoint = currentTurningPoint;
-                currentTurningPoint = null;
-            }else Debug.Log("Got Here2");
-        }
-        */
-    }
-
-    TurningPoint GetTurningPointAtPosition(Vector2 _position)
-    {
-        if (mapa.mapPoints[(int)_position.x, (int)_position.y].GetComponent<TurningPoint>() != null)
-        {
-            return mapa.mapPoints[(int)_position.x, (int)_position.y].GetComponent<TurningPoint>();
-        }
-        return null;
-    }
-
-    TurningPoint CanMove(Vector2 _direction)
-    {
-        TurningPoint moveToTurningPoint = null;
-        for (int i = 0; i < currentTurningPoint.neighborsTurningPoints.Length; i++)
-        {
-            if (currentTurningPoint.directionToNeighborTurningPoint[i] == _direction)
-            {
-                moveToTurningPoint = currentTurningPoint.neighborsTurningPoints[i];
-                break;
+                currentTurningPoint = null; //I will be between nodes;
             }
         }
-        Debug.Log("Can Move to:" + moveToTurningPoint);
-        return moveToTurningPoint;
     }
 
     void MovePacman()
     {
+
         if(targetTurningPoint != null)
         {
-            /*
-            if(nextDirection == direction*-1)
+            if(nextDirection == currentDirection*-1)
             {
-                direction *= -1;
+                currentDirection *= -1;
                 TurningPoint tempTurningPoint = targetTurningPoint;
                 targetTurningPoint = previousTurningPoint;
                 previousTurningPoint = tempTurningPoint;
             }
-            */
+            
+
 
             if (ReachedTargetTurningPoint())
             {
-                Debug.Log("Arrived");
                 currentTurningPoint = targetTurningPoint;
                 transform.position = currentTurningPoint.transform.position;
 
-                /*
                 GameObject destiny = GetPortal(currentTurningPoint.transform.position);
                 if (destiny != null)
                 {
                     transform.position = destiny.transform.position;
                     currentTurningPoint = destiny.GetComponent<TurningPoint>();
                 }
-                */
+
 
                 TurningPoint moveToTurningPoint = CanMove(nextDirection);
-                if (moveToTurningPoint == null)
+                if (moveToTurningPoint != null)//If I can go to the next direction
                 {
-                    moveToTurningPoint = CanMove(direction);
-                    if (moveToTurningPoint == null)
-                    {
-                        facingWall = true;
-                        direction = Vector2.zero;
-                    }
-                    else
-                    {
-                        facingWall = false;
-                        targetTurningPoint = moveToTurningPoint;
-                        previousTurningPoint = currentTurningPoint;
-                        currentTurningPoint = null;
-                    }
+                    //update current direction
+                    currentDirection = nextDirection;
                 }
-                else
+                else //continue in the same direction
                 {
-                    facingWall = false;
-                    direction = nextDirection;
+                    moveToTurningPoint = CanMove(currentDirection);
+                }
+
+                if (moveToTurningPoint != null)//If I can go to the targetTurningPoint that is the neighbour in the next direction or the same direction
+                {
                     targetTurningPoint = moveToTurningPoint;
                     previousTurningPoint = currentTurningPoint;
                     currentTurningPoint = null;
                 }
+                else //If I can't go
+                {
+                    //I will stop
+                    currentDirection = Vector2.zero;
+                }
             }
-            else if (direction != Vector2.zero)
-            {
-                transform.position += (Vector3)direction * speed * Time.deltaTime;
-            }
-            else if (facingWall != true)
-            {
-                transform.position += (Vector3)nextDirection * speed * Time.deltaTime;
-            }
+            else transform.position += (Vector3)currentDirection * speed * Time.deltaTime;
         }
     }
     float DistanceToPreviousTurningPoint(Vector2 _targetPosition)
@@ -173,7 +196,7 @@ public class PacWoman : MonoBehaviour
         }
         else if (Input.GetKeyDown("right"))
         {
-            ChangePosition(Vector2.right); 
+            ChangePosition(Vector2.right);
         }
         else if (Input.GetKeyDown("up"))
         {
@@ -184,20 +207,10 @@ public class PacWoman : MonoBehaviour
             ChangePosition(Vector2.down);
         }
     }
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        scoreText.text = "Score:" + score.ToString();
-        livesText.text = "Lives:" + lives.ToString();
-        CheckInput();
-        MovePacman();
-        UpdateOrientation();
-        UpdateEatingAnimation();
-    }
 
     private void UpdateEatingAnimation()
     {
-        if(direction == Vector2.zero)
+        if(currentDirection == Vector2.zero)
         {
             gameObject.GetComponent<Animator>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().sprite = pausedSprite;
@@ -207,140 +220,18 @@ public class PacWoman : MonoBehaviour
         }
     }
 
-    private void PacManDies()
+    TurningPoint GetTurningPointAtPosition(Vector2 _position)
     {
-        if (lives > 1)
+        GameObject gameObjectAtPosition = mapa.mapPoints[(int)_position.x, (int)_position.y];
+        if (gameObjectAtPosition != null)
         {
-            Destroy(this);
+            return mapa.mapPoints[(int)_position.x, (int)_position.y].GetComponent<TurningPoint>();
         }
-    }
-
-    /**
-    bool CanMoveInDirection(Vector2 _direction)
-    {
-
-        Transform point = GameObject.Find("Mapa").GetComponent<Mapa>().mapPoints[(int)transform.position.x, (int)transform.position.y];
-        if (point != null)
-        {
-            GameObject pointGameObject = point.gameObject;
-            Vector2[] vectorToNextPoints = pointGameObject.GetComponent<TurningPoint>().vectorToNextPoint;
-            for (int i = 0; i < vectorToNextPoints.Length; i++)
-            {
-                if (vectorToNextPoints[i] == _direction)
-                {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-    **/
-    private void  OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Dots"))
-        {
-            score++;
-            Destroy(other.gameObject);
-        }
-        /**
-        if (other.tag == "Ghost")
-        {
-            String ghostName = other.GetComponent<Collider2D>().gameObject.name;
-
-            // Get the AudioSource
-            AudioSource audioSource = soundManager.GetComponent<AudioSource>();
-
-            // If the Ghosts name matches
-            if (ghostName == "RedGhost")
-            {
-                if (redGhostScript.isGhostBlue)
-                {
-
-                    // Call for the Ghost to be reset and for its destination 
-                    // to now be Ms. Pac-Man
-                    redGhostScript.ResetGhostAfterEaten(gameObject);
-
-                    // Play eating ghost sound
-                    SoundManager.SMinstance.PlayOneShot(SoundManager.SMinstance.eatingGhost);
-
-                    // Increase the score
-                    //IncreaseTextUIScore(400);
-                }
-                else
-                {
-
-                    // Play Ms. Pac-Man dies sound
-                    SoundManager.SMinstance.PlayOneShot(SoundManager.SMinstance.pacManDies);
-
-                    // Turn off the dot eating sound
-                    audioSource.Stop();
-
-                    // Destroy Ms. Pac-Man
-                    Destroy(gameObject);
-                }
-            }
-            else if (ghostName == "PinkGhost")
-            {
-                if (pinkGhostScript.isGhostBlue)
-                {
-                    pinkGhostScript.ResetGhostAfterEaten(gameObject);
-                    SoundManager.SMinstance.PlayOneShot(SoundManager.SMinstance.eatingGhost);
-                    //IncreaseTextUIScore(400);
-                }
-                else
-                {
-                    SoundManager.SMinstance.PlayOneShot(SoundManager.SMinstance.pacManDies);
-                    audioSource.Stop();
-                    Destroy(gameObject);
-                }
-            }
-            else if (ghostName == "BlueGhost")
-            {
-                if (blueGhostScript.isGhostBlue)
-                {
-                    blueGhostScript.ResetGhostAfterEaten(gameObject);
-                    SoundManager.SMinstance.PlayOneShot(SoundManager.SMinstance.eatingGhost);
-                    //IncreaseTextUIScore(400);
-                }
-                else
-                {
-                    SoundManager.SMinstance.PlayOneShot(SoundManager.SMinstance.pacManDies);
-                    audioSource.Stop();
-                    Destroy(gameObject);
-                }
-            }
-            else if (ghostName == "OrangeGhost")
-            {
-                if (orangeGhostScript.isGhostBlue)
-                {
-                    orangeGhostScript.ResetGhostAfterEaten(gameObject);
-                    SoundManager.SMinstance.PlayOneShot(SoundManager.SMinstance.eatingGhost);
-                    //IncreaseTextUIScore(400);
-                }
-                else
-                {
-                    SoundManager.SMinstance.PlayOneShot(SoundManager.SMinstance.pacManDies);
-                    audioSource.Stop();
-                    Destroy(gameObject);
-                }
-            }
-
-        }
-        **/
-        if (other.tag == "Pills")
-        {
-            SoundManager.SMinstance.PlayOneShot(SoundManager.SMinstance.powerUp);
-            Destroy(other.gameObject);
-            //redGhostScript.TurnGhostBlue();
-            //pinkGhostScript.TurnGhostBlue();
-            //blueGhostScript.TurnGhostBlue();
-            //orangeGhostScript.TurnGhostBlue();
-
-        }
+        return null;
     }
     GameObject GetPortal(Vector2 _position)
     {
-        TurningPoint currentTurningPoint = GetTurningPointAtPosition(transform.position);
+        TurningPoint currentTurningPoint = GetTurningPointAtPosition(_position);
         if (currentTurningPoint.isPortal)
         {
             return currentTurningPoint.destinationPortal;
@@ -350,30 +241,44 @@ public class PacWoman : MonoBehaviour
 
     void UpdateOrientation()
     {
-        if (direction == Vector2.left)
+        if (currentDirection == Vector2.left)
         {
             //left
             transform.localScale = Vector2.one;
             transform.localRotation = Quaternion.Euler(Vector3.zero);
         }
-        else if (direction == Vector2.right)
+        else if (currentDirection == Vector2.right)
         {
             //right
             transform.localScale = new Vector2(-1, 1);
             transform.localRotation = Quaternion.Euler(Vector3.zero);
         }
-        else if (direction == Vector2.up)
+        else if (currentDirection == Vector2.up)
         {
             //up
             transform.localScale = new Vector2(1, -1);
             transform.localRotation = Quaternion.Euler(0, 0, 270);
         }
-        else if (direction == Vector2.down)
+        else if (currentDirection == Vector2.down)
         {
             //down
             transform.localScale = Vector2.one;
             transform.localRotation = Quaternion.Euler(0, 0, 90);
         }
+    }
+
+    TurningPoint CanMove(Vector2 _direction)
+    {
+        TurningPoint moveToTurningPoint = null;
+        for (int i = 0; i < currentTurningPoint.neighborsTurningPoints.Length; i++)
+        {
+            if (currentTurningPoint.directionToNeighborTurningPoint[i] == _direction)
+            {
+                moveToTurningPoint = currentTurningPoint.neighborsTurningPoints[i];
+                break;
+            }
+        }
+        return moveToTurningPoint;
     }
 
 }

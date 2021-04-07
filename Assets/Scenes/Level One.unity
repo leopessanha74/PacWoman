@@ -238,7 +238,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 121
+  m_RootOrder: 120
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6710141
 SpriteRenderer:
@@ -318,7 +318,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (30)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -353,6 +353,8 @@ MonoBehaviour:
   - {fileID: 1213653798}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &7765013
 CircleCollider2D:
@@ -400,7 +402,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 262
+  m_RootOrder: 258
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &11245257
 SpriteRenderer:
@@ -496,7 +498,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 258
+  m_RootOrder: 254
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &11724738
 SpriteRenderer:
@@ -592,7 +594,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 183
+  m_RootOrder: 181
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &14257062
 SpriteRenderer:
@@ -784,7 +786,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 252
+  m_RootOrder: 248
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &24358450
 SpriteRenderer:
@@ -976,7 +978,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 304
+  m_RootOrder: 300
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &31666560
 SpriteRenderer:
@@ -1056,7 +1058,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (37)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1092,6 +1094,8 @@ MonoBehaviour:
   - {fileID: 444404334}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &35595236
 CircleCollider2D:
@@ -1123,7 +1127,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (44)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1159,6 +1163,8 @@ MonoBehaviour:
   - {fileID: 94597612}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &37891611
 CircleCollider2D:
@@ -1398,7 +1404,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 292
+  m_RootOrder: 288
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &48578815
 SpriteRenderer:
@@ -1494,7 +1500,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 221
+  m_RootOrder: 218
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &58316037
 SpriteRenderer:
@@ -1686,7 +1692,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 285
+  m_RootOrder: 281
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &73918382
 SpriteRenderer:
@@ -1974,7 +1980,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 223
+  m_RootOrder: 220
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &90578984
 SpriteRenderer:
@@ -2150,7 +2156,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (43)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2186,6 +2192,8 @@ MonoBehaviour:
   - {fileID: 35595235}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &94597613
 CircleCollider2D:
@@ -2217,7 +2225,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (65)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2249,10 +2257,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighborsTurningPoints:
   - {fileID: 881521677}
-  - {fileID: 883058385}
+  - {fileID: 1507232021}
   - {fileID: 408782320}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &100507330
 CircleCollider2D:
@@ -2300,7 +2310,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 192
+  m_RootOrder: 190
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &103665965
 SpriteRenderer:
@@ -2492,7 +2502,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 238
+  m_RootOrder: 235
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &116128470
 SpriteRenderer:
@@ -2684,7 +2694,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 155
+  m_RootOrder: 153
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &127592145
 SpriteRenderer:
@@ -2860,7 +2870,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (7)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2896,6 +2906,8 @@ MonoBehaviour:
   - {fileID: 625617894}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &139785125
 CircleCollider2D:
@@ -2943,7 +2955,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 255
+  m_RootOrder: 251
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &141185773
 SpriteRenderer:
@@ -3119,7 +3131,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (45)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3155,6 +3167,8 @@ MonoBehaviour:
   - {fileID: 1169103490}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &158288727
 CircleCollider2D:
@@ -3282,7 +3296,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (58)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3319,6 +3333,8 @@ MonoBehaviour:
   - {fileID: 1263584183}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &166840320
 CircleCollider2D:
@@ -3734,7 +3750,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (60)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3769,6 +3785,8 @@ MonoBehaviour:
   - {fileID: 1335410044}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &190673358
 CircleCollider2D:
@@ -3816,7 +3834,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 281
+  m_RootOrder: 277
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &193389840
 SpriteRenderer:
@@ -3992,7 +4010,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (42)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4027,6 +4045,8 @@ MonoBehaviour:
   - {fileID: 1529642249}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &198750608
 CircleCollider2D:
@@ -4170,7 +4190,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 272
+  m_RootOrder: 268
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &206137460
 SpriteRenderer:
@@ -4249,13 +4269,14 @@ GameObject:
   - component: {fileID: 207081223}
   - component: {fileID: 207081222}
   - component: {fileID: 207081221}
+  - component: {fileID: 207081225}
   m_Layer: 0
-  m_Name: PinkGhost
+  m_Name: Pinky - Speedy - Pink
   m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &207081220
 Transform:
   m_ObjectHideFlags: 0
@@ -4264,7 +4285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207081219}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13, y: 16, z: 0.056640625}
+  m_LocalPosition: {x: 13.5, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 895575510}
@@ -4329,9 +4350,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28250042b9c0684f951ae030a2fa8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.8
-  startingPosition: {fileID: 0}
-  mapa: {fileID: 0}
+  currentMode: 1
+  previousMode: 0
+  ghostType: 1
+  currentTurningPoint: {fileID: 0}
+  targetTurningPoint: {fileID: 0}
+  previousTurningPoint: {fileID: 0}
+  scatterTurningPoint: {fileID: 7765012}
+  startingTurningPoint: {fileID: 0}
+  direction: {x: 0, y: 0}
+  nextDirection: {x: 0, y: 0}
+  currentSpeed: 0
+  previousSpeed: 0
+  frightenedSpeed: 3
+  eatenSpeed: 15
+  normalSpeed: 5
+  speed: 0
+  mapa: {fileID: 1292644026}
+  ghostReleaseTimer: 0
+  frightenedModeTimer: 0
+  blinkTimer: 0
   scatterModeTimer1: 7
   chaseModeTimer1: 20
   scatterModeTimer2: 7
@@ -4340,11 +4378,20 @@ MonoBehaviour:
   chaseModeTimer3: 20
   scatterModeTimer4: 5
   chaseModeTimer4: 20
-  currentTurningPoint: {fileID: 0}
-  targetTurningPoint: {fileID: 0}
-  previousTurningPoint: {fileID: 0}
-  direction: {x: 0, y: 0}
-  nextDirection: {x: 0, y: 0}
+  ghostReleaseTime: 0
+  frightenedModeDuration: 10
+  startBlinkingAt: 7
+  frightenedModeIsWhite: 0
+  isInGhostHouse: 1
+  frightenedGhost: {fileID: 9100000, guid: bf3c5663e6a54994aa55b9823eda9d4d, type: 2}
+  whiteGhost: {fileID: 9100000, guid: 322327c4a84314940a8818a4c01df6c4, type: 2}
+  eyesUp: {fileID: 21300000, guid: afc587f9ae5ffde49bfa70dda05b45a2, type: 3}
+  eyesDown: {fileID: 21300000, guid: be5f9d1033667954589e8649406053c1, type: 3}
+  eyesLeft: {fileID: 21300000, guid: f055db6c99d5ed44aaeee586f1dff1de, type: 3}
+  eyesRight: {fileID: 21300000, guid: a02faf81762a4a046a928b443e46ad3d, type: 3}
+  defaultSprite: {fileID: 21300008, guid: a8df8afe7ddac794088ec09605211886, type: 3}
+  lives: 3
+  canMove: 1
 --- !u!212 &207081224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4393,6 +4440,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &207081225
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207081219}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &208493148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4615,7 +4681,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 187
+  m_RootOrder: 185
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &230396145
 SpriteRenderer:
@@ -4681,83 +4747,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.05
---- !u!1 &230427588
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 230427589}
-  - component: {fileID: 230427591}
-  - component: {fileID: 230427590}
-  m_Layer: 5
-  m_Name: LivesText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &230427589
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230427588}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 266318403}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -520, y: 260}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &230427590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230427588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 17
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &230427591
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230427588}
-  m_CullTransparentMesh: 0
 --- !u!1 &241868334
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,7 +4761,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (27)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4808,6 +4797,8 @@ MonoBehaviour:
   - {fileID: 378474027}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &241868337
 CircleCollider2D:
@@ -4839,7 +4830,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (31)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4875,6 +4866,8 @@ MonoBehaviour:
   - {fileID: 1488476466}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &242908485
 CircleCollider2D:
@@ -5002,7 +4995,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (55)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5037,6 +5030,8 @@ MonoBehaviour:
   - {fileID: 883058385}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &258082959
 CircleCollider2D:
@@ -5084,7 +5079,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 230
+  m_RootOrder: 227
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &261951468
 SpriteRenderer:
@@ -5150,106 +5145,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.05
---- !u!1 &266318399
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 266318403}
-  - component: {fileID: 266318402}
-  - component: {fileID: 266318401}
-  - component: {fileID: 266318400}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &266318400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266318399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &266318401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266318399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &266318402
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266318399}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 1
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 10
-  m_TargetDisplay: 0
---- !u!224 &266318403
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266318399}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1508783535}
-  - {fileID: 230427589}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1 &270374454
 GameObject:
   m_ObjectHideFlags: 0
@@ -5376,7 +5271,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 274
+  m_RootOrder: 270
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &272876635
 SpriteRenderer:
@@ -5456,7 +5351,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (12)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5492,6 +5387,8 @@ MonoBehaviour:
   - {fileID: 881521677}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &273196984
 CircleCollider2D:
@@ -5539,7 +5436,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 123
+  m_RootOrder: 122
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &276886509
 SpriteRenderer:
@@ -5635,7 +5532,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 253
+  m_RootOrder: 249
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &277406565
 SpriteRenderer:
@@ -5827,7 +5724,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 287
+  m_RootOrder: 283
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &280663956
 SpriteRenderer:
@@ -5923,7 +5820,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 163
+  m_RootOrder: 161
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &284012800
 SpriteRenderer:
@@ -6019,7 +5916,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 269
+  m_RootOrder: 265
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &287856174
 SpriteRenderer:
@@ -6211,7 +6108,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 209
+  m_RootOrder: 207
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &289365150
 SpriteRenderer:
@@ -6291,7 +6188,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (1)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6328,6 +6225,8 @@ MonoBehaviour:
   - {fileID: 166840319}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &290965472
 CircleCollider2D:
@@ -6375,7 +6274,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 239
+  m_RootOrder: 236
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &293178979
 SpriteRenderer:
@@ -6441,6 +6340,73 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.05
+--- !u!1 &293951472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 293951473}
+  - component: {fileID: 293951475}
+  - component: {fileID: 293951474}
+  m_Layer: 0
+  m_Name: Point (68)
+  m_TagString: TurningPoints
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &293951473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293951472}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11, y: 16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 852882447}
+  m_RootOrder: 67
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &293951474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293951472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cd1af0a33f16b4b898b175f7b5161e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborsTurningPoints:
+  - {fileID: 1566782739}
+  directionToNeighborTurningPoint: []
+  isPortal: 0
+  ghostHouse: 1
+  ghostHouseEntrance: 0
+  destinationPortal: {fileID: 0}
+--- !u!58 &293951475
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293951472}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.0001
 --- !u!1 &294339694
 GameObject:
   m_ObjectHideFlags: 0
@@ -6471,7 +6437,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 174
+  m_RootOrder: 172
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &294339696
 SpriteRenderer:
@@ -6663,7 +6629,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 284
+  m_RootOrder: 280
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &303896301
 SpriteRenderer:
@@ -6759,7 +6725,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 180
+  m_RootOrder: 178
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &333994508
 SpriteRenderer:
@@ -6855,7 +6821,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 178
+  m_RootOrder: 176
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &339493969
 SpriteRenderer:
@@ -7143,7 +7109,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 276
+  m_RootOrder: 272
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &360225128
 SpriteRenderer:
@@ -7527,7 +7493,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 231
+  m_RootOrder: 228
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &372399828
 SpriteRenderer:
@@ -7607,7 +7573,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (26)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7644,6 +7610,8 @@ MonoBehaviour:
   - {fileID: 624508896}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &378474028
 CircleCollider2D:
@@ -7883,7 +7851,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 171
+  m_RootOrder: 169
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &391869911
 SpriteRenderer:
@@ -7979,7 +7947,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 298
+  m_RootOrder: 294
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &400952558
 SpriteRenderer:
@@ -8059,7 +8027,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (66)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8094,6 +8062,8 @@ MonoBehaviour:
   - {fileID: 670361305}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &408782321
 CircleCollider2D:
@@ -8111,102 +8081,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.0001
---- !u!1 &410407710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 410407711}
-  - component: {fileID: 410407712}
-  - component: {fileID: 410407713}
-  m_Layer: 0
-  m_Name: Dot (216)
-  m_TagString: Dots
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &410407711
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410407710}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26, y: 7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 986480944}
-  m_RootOrder: 211
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &410407712
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410407710}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300040, guid: a8df8afe7ddac794088ec09605211886, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!58 &410407713
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410407710}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.05
 --- !u!1 &419438441
 GameObject:
   m_ObjectHideFlags: 0
@@ -8221,7 +8095,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (23)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8256,6 +8130,8 @@ MonoBehaviour:
   - {fileID: 624508896}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &419438444
 CircleCollider2D:
@@ -8303,7 +8179,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 162
+  m_RootOrder: 160
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &425347278
 SpriteRenderer:
@@ -8383,7 +8259,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (10)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8420,6 +8296,8 @@ MonoBehaviour:
   - {fileID: 1206787741}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &437160735
 CircleCollider2D:
@@ -8467,7 +8345,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 172
+  m_RootOrder: 170
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &438926457
 SpriteRenderer:
@@ -8563,7 +8441,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 184
+  m_RootOrder: 182
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &440949901
 SpriteRenderer:
@@ -8643,7 +8521,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (52)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8678,6 +8556,8 @@ MonoBehaviour:
   - {fileID: 35595235}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &444404335
 CircleCollider2D:
@@ -8709,7 +8589,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (18)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8745,6 +8625,8 @@ MonoBehaviour:
   - {fileID: 1829949302}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &450708363
 CircleCollider2D:
@@ -8888,7 +8770,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 218
+  m_RootOrder: 215
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &474262263
 SpriteRenderer:
@@ -9063,8 +8945,9 @@ GameObject:
   - component: {fileID: 488183818}
   - component: {fileID: 488183817}
   - component: {fileID: 488183820}
+  - component: {fileID: 488183821}
   m_Layer: 0
-  m_Name: RedGhost
+  m_Name: Blinky - Shadow - Red
   m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9078,7 +8961,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488183815}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9, y: 7, z: 0}
+  m_LocalPosition: {x: 13.5, y: 19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 895575510}
@@ -9117,9 +9000,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28250042b9c0684f951ae030a2fa8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  startingPosition: {fileID: 37891610}
+  currentMode: 1
+  previousMode: 0
+  ghostType: 0
+  currentTurningPoint: {fileID: 0}
+  targetTurningPoint: {fileID: 0}
+  previousTurningPoint: {fileID: 0}
+  scatterTurningPoint: {fileID: 419438443}
+  startingTurningPoint: {fileID: 0}
+  direction: {x: 0, y: 0}
+  nextDirection: {x: 0, y: 0}
+  currentSpeed: 0
+  previousSpeed: 0
+  frightenedSpeed: 3
+  eatenSpeed: 15
+  normalSpeed: 5
+  speed: 0
   mapa: {fileID: 1292644026}
+  ghostReleaseTimer: 0
+  frightenedModeTimer: 0
+  blinkTimer: 0
   scatterModeTimer1: 7
   chaseModeTimer1: 20
   scatterModeTimer2: 7
@@ -9128,11 +9028,20 @@ MonoBehaviour:
   chaseModeTimer3: 20
   scatterModeTimer4: 5
   chaseModeTimer4: 20
-  currentTurningPoint: {fileID: 0}
-  targetTurningPoint: {fileID: 0}
-  previousTurningPoint: {fileID: 0}
-  direction: {x: 0, y: 0}
-  nextDirection: {x: 0, y: 0}
+  ghostReleaseTime: 0
+  frightenedModeDuration: 10
+  startBlinkingAt: 7
+  frightenedModeIsWhite: 0
+  isInGhostHouse: 0
+  frightenedGhost: {fileID: 9100000, guid: bf3c5663e6a54994aa55b9823eda9d4d, type: 2}
+  whiteGhost: {fileID: 9100000, guid: 322327c4a84314940a8818a4c01df6c4, type: 2}
+  eyesUp: {fileID: 21300000, guid: afc587f9ae5ffde49bfa70dda05b45a2, type: 3}
+  eyesDown: {fileID: 21300000, guid: be5f9d1033667954589e8649406053c1, type: 3}
+  eyesLeft: {fileID: 21300000, guid: f055db6c99d5ed44aaeee586f1dff1de, type: 3}
+  eyesRight: {fileID: 21300000, guid: a02faf81762a4a046a928b443e46ad3d, type: 3}
+  defaultSprite: {fileID: 21300000, guid: a8df8afe7ddac794088ec09605211886, type: 3}
+  lives: 3
+  canMove: 1
 --- !u!212 &488183819
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9207,6 +9116,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
+--- !u!95 &488183821
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488183815}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf3c5663e6a54994aa55b9823eda9d4d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &496733647
 GameObject:
   m_ObjectHideFlags: 0
@@ -9237,7 +9165,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 132
+  m_RootOrder: 130
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &496733649
 SpriteRenderer:
@@ -9429,7 +9357,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 286
+  m_RootOrder: 282
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &508808091
 SpriteRenderer:
@@ -9528,18 +9456,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31dc6caf3152ed24aa303042e4113fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0}
+  speed: 5.5
+  currentDirection: {x: 0, y: 0}
   nextDirection: {x: 0, y: 0}
   currentTurningPoint: {fileID: 0}
   targetTurningPoint: {fileID: 37891610}
   previousTurningPoint: {fileID: 0}
+  startingTurningPoint: {fileID: 0}
   mapa: {fileID: 1292644026}
   pausedSprite: {fileID: 21300036, guid: a8df8afe7ddac794088ec09605211886, type: 3}
-  speed: 5
   score: 0
-  scoreText: {fileID: 1508783536}
+  scoreText: {fileID: 0}
   lives: 3
-  livesText: {fileID: 230427590}
+  livesText: {fileID: 0}
+  canMove: 1
+  pacman: {fileID: 9100000, guid: c88263467c651924b93c1d4e505a8b37, type: 2}
+  pacManDeath: {fileID: 9100000, guid: cafbea426edd9f443a6675cd0769510a, type: 2}
 --- !u!50 &510962987
 Rigidbody2D:
   serializedVersion: 4
@@ -9688,7 +9620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 154
+  m_RootOrder: 152
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &519404221
 SpriteRenderer:
@@ -9962,7 +9894,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 271
+  m_RootOrder: 267
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &522654346
 SpriteRenderer:
@@ -10058,7 +9990,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 203
+  m_RootOrder: 201
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &529341697
 SpriteRenderer:
@@ -10250,7 +10182,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 129
+  m_RootOrder: 127
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &541564788
 SpriteRenderer:
@@ -10330,7 +10262,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (47)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -10365,6 +10297,8 @@ MonoBehaviour:
   - {fileID: 1439147110}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &542949466
 CircleCollider2D:
@@ -10700,7 +10634,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 290
+  m_RootOrder: 286
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &567707663
 SpriteRenderer:
@@ -10892,7 +10826,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 247
+  m_RootOrder: 243
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &571950693
 SpriteRenderer:
@@ -10988,7 +10922,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 240
+  m_RootOrder: 237
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &578823403
 SpriteRenderer:
@@ -11084,7 +11018,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 227
+  m_RootOrder: 224
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &590004009
 SpriteRenderer:
@@ -11180,7 +11114,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 139
+  m_RootOrder: 137
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &591119589
 SpriteRenderer:
@@ -11276,7 +11210,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 264
+  m_RootOrder: 260
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &594813694
 SpriteRenderer:
@@ -11372,7 +11306,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 303
+  m_RootOrder: 299
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &601095386
 SpriteRenderer:
@@ -11468,7 +11402,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 263
+  m_RootOrder: 259
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &612660360
 SpriteRenderer:
@@ -11548,7 +11482,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (35)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11584,6 +11518,8 @@ MonoBehaviour:
   - {fileID: 378474027}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &624508897
 CircleCollider2D:
@@ -11631,7 +11567,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 249
+  m_RootOrder: 245
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &625396857
 SpriteRenderer:
@@ -11711,7 +11647,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (36)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11747,6 +11683,8 @@ MonoBehaviour:
   - {fileID: 437160734}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &625617895
 CircleCollider2D:
@@ -11764,102 +11702,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.0001
---- !u!1 &628884885
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 628884886}
-  - component: {fileID: 628884887}
-  - component: {fileID: 628884888}
-  m_Layer: 0
-  m_Name: Dot (125)
-  m_TagString: Dots
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &628884886
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628884885}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 986480944}
-  m_RootOrder: 124
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &628884887
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628884885}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300040, guid: a8df8afe7ddac794088ec09605211886, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!58 &628884888
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628884885}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.05
 --- !u!1 &634146386
 GameObject:
   m_ObjectHideFlags: 0
@@ -11890,7 +11732,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 185
+  m_RootOrder: 183
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &634146388
 SpriteRenderer:
@@ -12274,7 +12116,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 243
+  m_RootOrder: 240
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &652584240
 SpriteRenderer:
@@ -12370,7 +12212,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 193
+  m_RootOrder: 191
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &657468886
 SpriteRenderer:
@@ -12466,7 +12308,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 125
+  m_RootOrder: 123
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &657993557
 SpriteRenderer:
@@ -12562,7 +12404,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 305
+  m_RootOrder: 301
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &661444497
 SpriteRenderer:
@@ -12658,7 +12500,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 228
+  m_RootOrder: 225
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &662064627
 SpriteRenderer:
@@ -12738,7 +12580,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (6)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12774,6 +12616,8 @@ MonoBehaviour:
   - {fileID: 761916249}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &663105022
 CircleCollider2D:
@@ -12821,7 +12665,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 164
+  m_RootOrder: 162
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &663680495
 SpriteRenderer:
@@ -12901,7 +12745,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (17)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12936,6 +12780,8 @@ MonoBehaviour:
   - {fileID: 408782320}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &670361306
 CircleCollider2D:
@@ -12983,7 +12829,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 236
+  m_RootOrder: 233
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &683866918
 SpriteRenderer:
@@ -13175,7 +13021,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 225
+  m_RootOrder: 222
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &704946340
 SpriteRenderer:
@@ -13271,7 +13117,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 159
+  m_RootOrder: 157
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &711582715
 SpriteRenderer:
@@ -13351,7 +13197,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (54)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -13387,6 +13233,8 @@ MonoBehaviour:
   - {fileID: 1394304215}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &714117265
 CircleCollider2D:
@@ -13434,7 +13282,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 294
+  m_RootOrder: 290
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &740096430
 SpriteRenderer:
@@ -13530,7 +13378,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 149
+  m_RootOrder: 147
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &752748826
 SpriteRenderer:
@@ -13610,7 +13458,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (62)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -13646,6 +13494,8 @@ MonoBehaviour:
   - {fileID: 1704317300}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &761916250
 CircleCollider2D:
@@ -13772,13 +13622,14 @@ GameObject:
   - component: {fileID: 764626643}
   - component: {fileID: 764626642}
   - component: {fileID: 764626641}
+  - component: {fileID: 764626645}
   m_Layer: 0
-  m_Name: BlueGhost
+  m_Name: Inky - Bashful - Blue
   m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &764626640
 Transform:
   m_ObjectHideFlags: 0
@@ -13787,7 +13638,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764626639}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12, y: 16, z: 0.056640625}
+  m_LocalPosition: {x: 11, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 895575510}
@@ -13852,9 +13703,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28250042b9c0684f951ae030a2fa8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.8
-  startingPosition: {fileID: 0}
-  mapa: {fileID: 0}
+  currentMode: 1
+  previousMode: 0
+  ghostType: 3
+  currentTurningPoint: {fileID: 0}
+  targetTurningPoint: {fileID: 0}
+  previousTurningPoint: {fileID: 0}
+  scatterTurningPoint: {fileID: 1020218491}
+  startingTurningPoint: {fileID: 0}
+  direction: {x: 0, y: 0}
+  nextDirection: {x: 0, y: 0}
+  currentSpeed: 0
+  previousSpeed: 0
+  frightenedSpeed: 3
+  eatenSpeed: 15
+  normalSpeed: 5
+  speed: 0
+  mapa: {fileID: 1292644026}
+  ghostReleaseTimer: 0
+  frightenedModeTimer: 0
+  blinkTimer: 0
   scatterModeTimer1: 7
   chaseModeTimer1: 20
   scatterModeTimer2: 7
@@ -13863,11 +13731,20 @@ MonoBehaviour:
   chaseModeTimer3: 20
   scatterModeTimer4: 5
   chaseModeTimer4: 20
-  currentTurningPoint: {fileID: 0}
-  targetTurningPoint: {fileID: 0}
-  previousTurningPoint: {fileID: 0}
-  direction: {x: 0, y: 0}
-  nextDirection: {x: 0, y: 0}
+  ghostReleaseTime: 0
+  frightenedModeDuration: 10
+  startBlinkingAt: 7
+  frightenedModeIsWhite: 0
+  isInGhostHouse: 1
+  frightenedGhost: {fileID: 9100000, guid: bf3c5663e6a54994aa55b9823eda9d4d, type: 2}
+  whiteGhost: {fileID: 9100000, guid: 322327c4a84314940a8818a4c01df6c4, type: 2}
+  eyesUp: {fileID: 21300000, guid: afc587f9ae5ffde49bfa70dda05b45a2, type: 3}
+  eyesDown: {fileID: 21300000, guid: be5f9d1033667954589e8649406053c1, type: 3}
+  eyesLeft: {fileID: 21300000, guid: f055db6c99d5ed44aaeee586f1dff1de, type: 3}
+  eyesRight: {fileID: 21300000, guid: a02faf81762a4a046a928b443e46ad3d, type: 3}
+  defaultSprite: {fileID: 21300016, guid: a8df8afe7ddac794088ec09605211886, type: 3}
+  lives: 3
+  canMove: 1
 --- !u!212 &764626644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13916,6 +13793,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &764626645
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764626639}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &767164928
 GameObject:
   m_ObjectHideFlags: 0
@@ -13946,7 +13842,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 237
+  m_RootOrder: 234
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &767164930
 SpriteRenderer:
@@ -14426,7 +14322,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 189
+  m_RootOrder: 187
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &812573585
 SpriteRenderer:
@@ -14618,7 +14514,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 217
+  m_RootOrder: 214
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &824289877
 SpriteRenderer:
@@ -14794,7 +14690,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (11)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -14831,6 +14727,8 @@ MonoBehaviour:
   - {fileID: 1142607112}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &833509686
 CircleCollider2D:
@@ -14878,7 +14776,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 202
+  m_RootOrder: 200
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &833960388
 SpriteRenderer:
@@ -15038,6 +14936,10 @@ Transform:
   - {fileID: 1678958425}
   - {fileID: 663105020}
   - {fileID: 714117263}
+  - {fileID: 293951473}
+  - {fileID: 1566782741}
+  - {fileID: 1023625035}
+  - {fileID: 1507232020}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15167,7 +15069,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 234
+  m_RootOrder: 231
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &858813121
 SpriteRenderer:
@@ -15359,7 +15261,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 161
+  m_RootOrder: 159
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &866603487
 SpriteRenderer:
@@ -15455,7 +15357,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 207
+  m_RootOrder: 205
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &868162804
 SpriteRenderer:
@@ -15551,7 +15453,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 201
+  m_RootOrder: 199
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &869005695
 SpriteRenderer:
@@ -15631,7 +15533,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (13)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -15666,6 +15568,8 @@ MonoBehaviour:
   - {fileID: 273196983}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &881521678
 CircleCollider2D:
@@ -15697,7 +15601,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (56)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -15730,9 +15634,11 @@ MonoBehaviour:
   neighborsTurningPoints:
   - {fileID: 1593297899}
   - {fileID: 258082958}
-  - {fileID: 100507329}
+  - {fileID: 1507232021}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &883058386
 CircleCollider2D:
@@ -15780,7 +15686,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 206
+  m_RootOrder: 204
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &891894261
 SpriteRenderer:
@@ -15861,7 +15767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &895575510
 Transform:
   m_ObjectHideFlags: 0
@@ -15878,7 +15784,7 @@ Transform:
   - {fileID: 1984463455}
   - {fileID: 764626640}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &905689928
 GameObject:
@@ -16198,7 +16104,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 302
+  m_RootOrder: 298
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &924008814
 SpriteRenderer:
@@ -16294,7 +16200,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 299
+  m_RootOrder: 295
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &929224467
 SpriteRenderer:
@@ -16582,7 +16488,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 131
+  m_RootOrder: 129
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &949435965
 SpriteRenderer:
@@ -16678,7 +16584,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 291
+  m_RootOrder: 287
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &954047808
 SpriteRenderer:
@@ -16774,7 +16680,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 188
+  m_RootOrder: 186
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &961678288
 SpriteRenderer:
@@ -16870,7 +16776,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 267
+  m_RootOrder: 263
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &962083309
 SpriteRenderer:
@@ -17062,7 +16968,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 268
+  m_RootOrder: 264
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &972324999
 SpriteRenderer:
@@ -17142,7 +17048,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (2)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -17177,6 +17083,8 @@ MonoBehaviour:
   - {fileID: 1335410044}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &974255847
 CircleCollider2D:
@@ -17224,7 +17132,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 242
+  m_RootOrder: 239
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &974801344
 SpriteRenderer:
@@ -17304,7 +17212,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (16)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -17339,6 +17247,8 @@ MonoBehaviour:
   - {fileID: 258082958}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &980082669
 CircleCollider2D:
@@ -17371,7 +17281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &986480944
 Transform:
   m_ObjectHideFlags: 0
@@ -17503,11 +17413,9 @@ Transform:
   - {fileID: 1344147899}
   - {fileID: 355000753}
   - {fileID: 941297277}
-  - {fileID: 1794400700}
   - {fileID: 6710140}
   - {fileID: 1096445943}
   - {fileID: 276886508}
-  - {fileID: 628884886}
   - {fileID: 657993556}
   - {fileID: 1048210973}
   - {fileID: 2095683373}
@@ -17594,7 +17502,6 @@ Transform:
   - {fileID: 992331808}
   - {fileID: 289365149}
   - {fileID: 1274233099}
-  - {fileID: 410407711}
   - {fileID: 1070395203}
   - {fileID: 2041210845}
   - {fileID: 1061331705}
@@ -17628,7 +17535,6 @@ Transform:
   - {fileID: 974801343}
   - {fileID: 652584239}
   - {fileID: 1562578035}
-  - {fileID: 1211274624}
   - {fileID: 1771893270}
   - {fileID: 571950692}
   - {fileID: 1217963201}
@@ -17722,7 +17628,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 208
+  m_RootOrder: 206
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &992331809
 SpriteRenderer:
@@ -17914,7 +17820,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 165
+  m_RootOrder: 163
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1015303560
 SpriteRenderer:
@@ -18010,7 +17916,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 295
+  m_RootOrder: 291
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1017143252
 SpriteRenderer:
@@ -18106,7 +18012,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 289
+  m_RootOrder: 285
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1019561545
 SpriteRenderer:
@@ -18186,7 +18092,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (53)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -18221,6 +18127,8 @@ MonoBehaviour:
   - {fileID: 1420411285}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1020218492
 CircleCollider2D:
@@ -18229,6 +18137,73 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020218489}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.0001
+--- !u!1 &1023625034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1023625035}
+  - component: {fileID: 1023625037}
+  - component: {fileID: 1023625036}
+  m_Layer: 0
+  m_Name: Point (70)
+  m_TagString: TurningPoints
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1023625035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023625034}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16, y: 16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 852882447}
+  m_RootOrder: 69
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1023625036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023625034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cd1af0a33f16b4b898b175f7b5161e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborsTurningPoints:
+  - {fileID: 1566782739}
+  directionToNeighborTurningPoint: []
+  isPortal: 0
+  ghostHouse: 1
+  ghostHouseEntrance: 0
+  destinationPortal: {fileID: 0}
+--- !u!58 &1023625037
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023625034}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -18268,7 +18243,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 282
+  m_RootOrder: 278
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1044788034
 SpriteRenderer:
@@ -18364,7 +18339,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 195
+  m_RootOrder: 193
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1046699728
 SpriteRenderer:
@@ -18460,7 +18435,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 126
+  m_RootOrder: 124
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1048210974
 SpriteRenderer:
@@ -18652,7 +18627,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 214
+  m_RootOrder: 211
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1061331706
 SpriteRenderer:
@@ -18748,7 +18723,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 212
+  m_RootOrder: 209
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1070395204
 SpriteRenderer:
@@ -18828,7 +18803,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (8)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -18863,6 +18838,8 @@ MonoBehaviour:
   - {fileID: 625617894}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1075193243
 CircleCollider2D:
@@ -19006,7 +18983,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 167
+  m_RootOrder: 165
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1080077108
 SpriteRenderer:
@@ -19198,7 +19175,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 279
+  m_RootOrder: 275
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1082899820
 SpriteRenderer:
@@ -19294,7 +19271,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 128
+  m_RootOrder: 126
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1091837748
 SpriteRenderer:
@@ -19390,7 +19367,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 296
+  m_RootOrder: 292
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1094784355
 SpriteRenderer:
@@ -19486,7 +19463,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 122
+  m_RootOrder: 121
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1096445944
 SpriteRenderer:
@@ -19678,7 +19655,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 153
+  m_RootOrder: 151
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1111374403
 SpriteRenderer:
@@ -19774,7 +19751,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 173
+  m_RootOrder: 171
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1113849630
 SpriteRenderer:
@@ -19870,7 +19847,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 216
+  m_RootOrder: 213
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1117648824
 SpriteRenderer:
@@ -19950,7 +19927,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (49)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -19986,6 +19963,8 @@ MonoBehaviour:
   - {fileID: 1420411285}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1124841453
 CircleCollider2D:
@@ -20323,11 +20302,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c16f58f2e8fc914db7512aee26a58e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eatingDots: {fileID: 8300000, guid: 9667d4935ffbf42f695eff91f64be989, type: 3}
+  pacManAS: {fileID: 0}
+  ghostAS: {fileID: 0}
+  oneShotAS: {fileID: 0}
+  eatingDots: {fileID: 8300000, guid: d2b1d0d30c7c9bc498e29c0ef83dd43a, type: 3}
   eatingGhost: {fileID: 8300000, guid: 5d06e9ab56c484d8ba876ee3d44ec4ca, type: 3}
-  ghostMove: {fileID: 8300000, guid: 5ff187b0bc70243ddb9c6097a896b22c, type: 3}
+  ghostMove: {fileID: 8300000, guid: d2e7daf12791c14439ebfa5b08613879, type: 3}
   pacManDies: {fileID: 8300000, guid: b4b8ab1d6751a42c7bd880b280f4aa0c, type: 3}
   powerUp: {fileID: 8300000, guid: ccea4f5ce63e64a1a8829add0afa24d9, type: 3}
+  frightened: {fileID: 8300000, guid: 7cf6e2a56a42621499f851064a70f3a6, type: 3}
 --- !u!4 &1140542672
 Transform:
   m_ObjectHideFlags: 0
@@ -20340,7 +20323,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1142607110
 GameObject:
@@ -20356,7 +20339,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (25)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -20392,6 +20375,8 @@ MonoBehaviour:
   - {fileID: 378474027}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1142607113
 CircleCollider2D:
@@ -20439,7 +20424,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 142
+  m_RootOrder: 140
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1143082149
 SpriteRenderer:
@@ -20631,7 +20616,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 254
+  m_RootOrder: 250
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1153407180
 SpriteRenderer:
@@ -20727,7 +20712,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 200
+  m_RootOrder: 198
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1157593854
 SpriteRenderer:
@@ -20823,7 +20808,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 300
+  m_RootOrder: 296
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1163359871
 SpriteRenderer:
@@ -20919,7 +20904,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 168
+  m_RootOrder: 166
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1168588996
 SpriteRenderer:
@@ -20999,7 +20984,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (46)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -21035,6 +21020,8 @@ MonoBehaviour:
   - {fileID: 542949465}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1169103491
 CircleCollider2D:
@@ -21082,7 +21069,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 288
+  m_RootOrder: 284
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1177432505
 SpriteRenderer:
@@ -21178,7 +21165,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 130
+  m_RootOrder: 128
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1179011221
 SpriteRenderer:
@@ -21274,7 +21261,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 283
+  m_RootOrder: 279
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1187451918
 SpriteRenderer:
@@ -21354,7 +21341,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (38)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -21390,6 +21377,8 @@ MonoBehaviour:
   - {fileID: 437160734}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1206787742
 CircleCollider2D:
@@ -21421,7 +21410,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (24)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -21456,6 +21445,8 @@ MonoBehaviour:
   - {fileID: 624508896}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1210112039
 CircleCollider2D:
@@ -21473,102 +21464,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.0001
---- !u!1 &1211274623
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1211274624}
-  - component: {fileID: 1211274625}
-  - component: {fileID: 1211274626}
-  m_Layer: 0
-  m_Name: Dot (250)
-  m_TagString: Dots
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1211274624
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211274623}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 986480944}
-  m_RootOrder: 245
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1211274625
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211274623}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300040, guid: a8df8afe7ddac794088ec09605211886, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!58 &1211274626
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211274623}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.05
 --- !u!1 &1213160787
 GameObject:
   m_ObjectHideFlags: 0
@@ -21599,7 +21494,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 148
+  m_RootOrder: 146
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1213160789
 SpriteRenderer:
@@ -21679,7 +21574,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (33)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -21715,6 +21610,8 @@ MonoBehaviour:
   - {fileID: 1488476466}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1213653799
 CircleCollider2D:
@@ -21762,7 +21659,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 248
+  m_RootOrder: 244
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1217963202
 SpriteRenderer:
@@ -21954,7 +21851,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 152
+  m_RootOrder: 150
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1230608390
 SpriteRenderer:
@@ -22050,7 +21947,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 199
+  m_RootOrder: 197
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1232105779
 SpriteRenderer:
@@ -22146,7 +22043,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 241
+  m_RootOrder: 238
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1232474808
 SpriteRenderer:
@@ -22338,7 +22235,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 235
+  m_RootOrder: 232
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1239640708
 SpriteRenderer:
@@ -22418,7 +22315,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (4)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -22453,6 +22350,8 @@ MonoBehaviour:
   - {fileID: 1621113779}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1247593864
 CircleCollider2D:
@@ -22485,7 +22384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1252800595
 Transform:
   m_ObjectHideFlags: 0
@@ -22502,7 +22401,7 @@ Transform:
   - {fileID: 158659240}
   - {fileID: 1416698685}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1253506321
 GameObject:
@@ -22630,7 +22529,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 204
+  m_RootOrder: 202
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1258200570
 SpriteRenderer:
@@ -22726,7 +22625,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 133
+  m_RootOrder: 131
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1261928533
 SpriteRenderer:
@@ -22806,7 +22705,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (57)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -22842,6 +22741,8 @@ MonoBehaviour:
   - {fileID: 166840319}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1263584184
 CircleCollider2D:
@@ -23081,7 +22982,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 210
+  m_RootOrder: 208
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1274233100
 SpriteRenderer:
@@ -23177,7 +23078,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 256
+  m_RootOrder: 252
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1275274709
 SpriteRenderer:
@@ -23273,7 +23174,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 229
+  m_RootOrder: 226
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1285059550
 SpriteRenderer:
@@ -23461,7 +23362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 273
+  m_RootOrder: 269
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1308450362
 SpriteRenderer:
@@ -23557,7 +23458,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 136
+  m_RootOrder: 134
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1310863769
 SpriteRenderer:
@@ -23733,7 +23634,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (41)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -23766,6 +23667,8 @@ MonoBehaviour:
   neighborsTurningPoints: []
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1322792899
 CircleCollider2D:
@@ -23813,7 +23716,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 186
+  m_RootOrder: 184
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1332696561
 SpriteRenderer:
@@ -23893,7 +23796,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (61)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -23929,6 +23832,8 @@ MonoBehaviour:
   - {fileID: 190673357}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1335410045
 CircleCollider2D:
@@ -23976,7 +23881,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 175
+  m_RootOrder: 173
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1341768299
 SpriteRenderer:
@@ -24264,7 +24169,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 220
+  m_RootOrder: 217
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1346540054
 SpriteRenderer:
@@ -24344,7 +24249,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (67)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -24376,9 +24281,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighborsTurningPoints:
   - {fileID: 166840319}
-  - {fileID: 1678958426}
   directionToNeighborTurningPoint: []
   isPortal: 1
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 1678958424}
 --- !u!58 &1347649545
 CircleCollider2D:
@@ -24522,7 +24428,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 278
+  m_RootOrder: 274
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1355454995
 SpriteRenderer:
@@ -24714,7 +24620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 250
+  m_RootOrder: 246
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1367430927
 SpriteRenderer:
@@ -24810,7 +24716,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 259
+  m_RootOrder: 255
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1367897620
 SpriteRenderer:
@@ -24986,7 +24892,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (20)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -25022,6 +24928,8 @@ MonoBehaviour:
   - {fileID: 1900978272}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1383541858
 CircleCollider2D:
@@ -25069,7 +24977,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 266
+  m_RootOrder: 262
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1388189594
 SpriteRenderer:
@@ -25149,7 +25057,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (40)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -25184,6 +25092,8 @@ MonoBehaviour:
   - {fileID: 1020218491}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1394304216
 CircleCollider2D:
@@ -25311,7 +25221,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (50)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -25347,6 +25257,8 @@ MonoBehaviour:
   - {fileID: 1020218491}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1420411286
 CircleCollider2D:
@@ -25378,7 +25290,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (3)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -25413,6 +25325,8 @@ MonoBehaviour:
   - {fileID: 158288726}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1421638266
 CircleCollider2D:
@@ -25460,7 +25374,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 293
+  m_RootOrder: 289
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1422822709
 SpriteRenderer:
@@ -25556,7 +25470,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 265
+  m_RootOrder: 261
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1424012022
 SpriteRenderer:
@@ -25748,7 +25662,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 157
+  m_RootOrder: 155
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1430500666
 SpriteRenderer:
@@ -25924,7 +25838,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (48)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -25959,6 +25873,8 @@ MonoBehaviour:
   - {fileID: 1124841452}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1439147111
 CircleCollider2D:
@@ -26006,7 +25922,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 191
+  m_RootOrder: 189
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1439822544
 SpriteRenderer:
@@ -26102,7 +26018,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 215
+  m_RootOrder: 212
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1450570490
 SpriteRenderer:
@@ -26470,7 +26386,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (32)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -26507,6 +26423,8 @@ MonoBehaviour:
   - {fileID: 1764758187}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1488476467
 CircleCollider2D:
@@ -26554,7 +26472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 158
+  m_RootOrder: 156
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1489945820
 SpriteRenderer:
@@ -26620,6 +26538,75 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.05
+--- !u!1 &1507232019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1507232020}
+  - component: {fileID: 1507232022}
+  - component: {fileID: 1507232021}
+  m_Layer: 0
+  m_Name: Point (71)
+  m_TagString: TurningPoints
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1507232020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507232019}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.5, y: 19, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 852882447}
+  m_RootOrder: 70
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1507232021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507232019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cd1af0a33f16b4b898b175f7b5161e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborsTurningPoints:
+  - {fileID: 883058385}
+  - {fileID: 100507329}
+  - {fileID: 1566782739}
+  directionToNeighborTurningPoint: []
+  isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 1
+  destinationPortal: {fileID: 0}
+--- !u!58 &1507232022
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507232019}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.0001
 --- !u!1 &1508247836
 GameObject:
   m_ObjectHideFlags: 0
@@ -26650,7 +26637,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 224
+  m_RootOrder: 221
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1508247838
 SpriteRenderer:
@@ -26716,83 +26703,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.05
---- !u!1 &1508783534
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1508783535}
-  - component: {fileID: 1508783537}
-  - component: {fileID: 1508783536}
-  m_Layer: 5
-  m_Name: ScoreText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1508783535
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1508783534}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 266318403}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -520, y: 180}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1508783536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1508783534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 17
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &1508783537
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1508783534}
-  m_CullTransparentMesh: 0
 --- !u!1 &1509898410
 GameObject:
   m_ObjectHideFlags: 0
@@ -27015,7 +26925,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 140
+  m_RootOrder: 138
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1519787372
 SpriteRenderer:
@@ -27095,7 +27005,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (28)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -27130,6 +27040,8 @@ MonoBehaviour:
   - {fileID: 1904700310}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1529642250
 CircleCollider2D:
@@ -27177,7 +27089,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 301
+  m_RootOrder: 297
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1534859258
 SpriteRenderer:
@@ -27627,7 +27539,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 205
+  m_RootOrder: 203
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1561364549
 SpriteRenderer:
@@ -27707,7 +27619,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (39)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -27742,6 +27654,8 @@ MonoBehaviour:
   - {fileID: 714117264}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1561943948
 CircleCollider2D:
@@ -27789,7 +27703,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 244
+  m_RootOrder: 241
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1562578036
 SpriteRenderer:
@@ -27855,6 +27769,73 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.05
+--- !u!1 &1566782738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1566782741}
+  - component: {fileID: 1566782740}
+  - component: {fileID: 1566782739}
+  m_Layer: 0
+  m_Name: Point (69)
+  m_TagString: TurningPoints
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1566782739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566782738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cd1af0a33f16b4b898b175f7b5161e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborsTurningPoints:
+  - {fileID: 1507232021}
+  directionToNeighborTurningPoint: []
+  isPortal: 0
+  ghostHouse: 1
+  ghostHouseEntrance: 0
+  destinationPortal: {fileID: 0}
+--- !u!58 &1566782740
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566782738}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.0001
+--- !u!4 &1566782741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566782738}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.5, y: 16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 852882447}
+  m_RootOrder: 68
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1568210223
 GameObject:
   m_ObjectHideFlags: 0
@@ -28061,7 +28042,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (51)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -28096,6 +28077,8 @@ MonoBehaviour:
   - {fileID: 444404334}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1591831584
 CircleCollider2D:
@@ -28127,7 +28110,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (15)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -28162,6 +28145,8 @@ MonoBehaviour:
   - {fileID: 1263584183}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1593297900
 CircleCollider2D:
@@ -28305,7 +28290,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 182
+  m_RootOrder: 180
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1617423968
 SpriteRenderer:
@@ -28481,7 +28466,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (59)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -28516,6 +28501,8 @@ MonoBehaviour:
   - {fileID: 1247593863}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1621113780
 CircleCollider2D:
@@ -28563,7 +28550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 150
+  m_RootOrder: 148
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1635052327
 SpriteRenderer:
@@ -28659,7 +28646,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 257
+  m_RootOrder: 253
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1645139534
 SpriteRenderer:
@@ -28755,7 +28742,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 261
+  m_RootOrder: 257
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1656036683
 SpriteRenderer:
@@ -28851,7 +28838,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 198
+  m_RootOrder: 196
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1656062265
 SpriteRenderer:
@@ -28947,7 +28934,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 146
+  m_RootOrder: 144
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1663257108
 SpriteRenderer:
@@ -29027,7 +29014,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (14)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -29059,9 +29046,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighborsTurningPoints:
   - {fileID: 833509685}
-  - {fileID: 1347649544}
   directionToNeighborTurningPoint: []
   isPortal: 1
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 1347649542}
 --- !u!58 &1678958427
 CircleCollider2D:
@@ -29109,7 +29097,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 251
+  m_RootOrder: 247
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1682187414
 SpriteRenderer:
@@ -29205,7 +29193,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 135
+  m_RootOrder: 133
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1683279683
 SpriteRenderer:
@@ -29301,7 +29289,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 144
+  m_RootOrder: 142
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1685347279
 SpriteRenderer:
@@ -29397,7 +29385,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 275
+  m_RootOrder: 271
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1685617969
 SpriteRenderer:
@@ -29477,7 +29465,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (21)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -29512,6 +29500,8 @@ MonoBehaviour:
   - {fileID: 1900978272}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1687955938
 CircleCollider2D:
@@ -29559,7 +29549,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 179
+  m_RootOrder: 177
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1688051404
 SpriteRenderer:
@@ -29655,7 +29645,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 194
+  m_RootOrder: 192
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1690374443
 SpriteRenderer:
@@ -29831,7 +29821,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (5)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -29866,6 +29856,8 @@ MonoBehaviour:
   - {fileID: 761916249}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1704317301
 CircleCollider2D:
@@ -30297,7 +30289,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 143
+  m_RootOrder: 141
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1758943751
 SpriteRenderer:
@@ -30377,7 +30369,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (34)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -30413,6 +30405,8 @@ MonoBehaviour:
   - {fileID: 166840319}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1764758188
 CircleCollider2D:
@@ -30460,7 +30454,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 226
+  m_RootOrder: 223
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1766351134
 SpriteRenderer:
@@ -30556,7 +30550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 246
+  m_RootOrder: 242
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1771893271
 SpriteRenderer:
@@ -30844,7 +30838,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 232
+  m_RootOrder: 229
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1785028119
 SpriteRenderer:
@@ -31036,7 +31030,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 270
+  m_RootOrder: 266
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1792374317
 SpriteRenderer:
@@ -31093,102 +31087,6 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792374315}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.05
---- !u!1 &1794400699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1794400700}
-  - component: {fileID: 1794400701}
-  - component: {fileID: 1794400702}
-  m_Layer: 0
-  m_Name: Dot (121)
-  m_TagString: Dots
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1794400700
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794400699}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26, y: 22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 986480944}
-  m_RootOrder: 120
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1794400701
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794400699}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300040, guid: a8df8afe7ddac794088ec09605211886, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!58 &1794400702
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794400699}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -31420,7 +31318,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 196
+  m_RootOrder: 194
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1814089654
 SpriteRenderer:
@@ -31516,7 +31414,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 297
+  m_RootOrder: 293
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1816704881
 SpriteRenderer:
@@ -31612,7 +31510,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 134
+  m_RootOrder: 132
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1817789576
 SpriteRenderer:
@@ -31804,7 +31702,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 181
+  m_RootOrder: 179
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1825698819
 SpriteRenderer:
@@ -31884,7 +31782,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (63)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -31920,6 +31818,8 @@ MonoBehaviour:
   - {fileID: 1900978272}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1829949303
 CircleCollider2D:
@@ -31967,7 +31867,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 260
+  m_RootOrder: 256
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1833985221
 SpriteRenderer:
@@ -32159,7 +32059,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 138
+  m_RootOrder: 136
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1836395255
 SpriteRenderer:
@@ -32255,7 +32155,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 145
+  m_RootOrder: 143
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1841261985
 SpriteRenderer:
@@ -32351,7 +32251,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 160
+  m_RootOrder: 158
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1847662049
 SpriteRenderer:
@@ -32447,7 +32347,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 197
+  m_RootOrder: 195
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1861989980
 SpriteRenderer:
@@ -32815,7 +32715,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (64)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -32851,6 +32751,8 @@ MonoBehaviour:
   - {fileID: 1829949302}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1900978273
 CircleCollider2D:
@@ -32978,7 +32880,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (9)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -33013,6 +32915,8 @@ MonoBehaviour:
   - {fileID: 1529642249}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1904700311
 CircleCollider2D:
@@ -33140,7 +33044,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -33175,6 +33079,8 @@ MonoBehaviour:
   - {fileID: 974255846}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1919333304
 CircleCollider2D:
@@ -33206,7 +33112,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (22)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -33241,6 +33147,8 @@ MonoBehaviour:
   - {fileID: 241868336}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &1922960005
 CircleCollider2D:
@@ -33480,7 +33388,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 233
+  m_RootOrder: 230
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1943260535
 SpriteRenderer:
@@ -33672,7 +33580,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 177
+  m_RootOrder: 175
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1965672401
 SpriteRenderer:
@@ -33847,13 +33755,14 @@ GameObject:
   - component: {fileID: 1984463458}
   - component: {fileID: 1984463457}
   - component: {fileID: 1984463456}
+  - component: {fileID: 1984463460}
   m_Layer: 0
-  m_Name: OrangeGhost
+  m_Name: Clyde - Pokey - Orange
   m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1984463455
 Transform:
   m_ObjectHideFlags: 0
@@ -33862,7 +33771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984463454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15, y: 16, z: 0.056640625}
+  m_LocalPosition: {x: 16, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 895575510}
@@ -33927,9 +33836,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28250042b9c0684f951ae030a2fa8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.8
-  startingPosition: {fileID: 0}
-  mapa: {fileID: 0}
+  currentMode: 1
+  previousMode: 0
+  ghostType: 2
+  currentTurningPoint: {fileID: 0}
+  targetTurningPoint: {fileID: 0}
+  previousTurningPoint: {fileID: 0}
+  scatterTurningPoint: {fileID: 1919333303}
+  startingTurningPoint: {fileID: 0}
+  direction: {x: 0, y: 0}
+  nextDirection: {x: 0, y: 0}
+  currentSpeed: 0
+  previousSpeed: 0
+  frightenedSpeed: 3
+  eatenSpeed: 15
+  normalSpeed: 5
+  speed: 0
+  mapa: {fileID: 1292644026}
+  ghostReleaseTimer: 0
+  frightenedModeTimer: 0
+  blinkTimer: 0
   scatterModeTimer1: 7
   chaseModeTimer1: 20
   scatterModeTimer2: 7
@@ -33938,11 +33864,20 @@ MonoBehaviour:
   chaseModeTimer3: 20
   scatterModeTimer4: 5
   chaseModeTimer4: 20
-  currentTurningPoint: {fileID: 0}
-  targetTurningPoint: {fileID: 0}
-  previousTurningPoint: {fileID: 0}
-  direction: {x: 0, y: 0}
-  nextDirection: {x: 0, y: 0}
+  ghostReleaseTime: 0
+  frightenedModeDuration: 10
+  startBlinkingAt: 7
+  frightenedModeIsWhite: 0
+  isInGhostHouse: 1
+  frightenedGhost: {fileID: 9100000, guid: bf3c5663e6a54994aa55b9823eda9d4d, type: 2}
+  whiteGhost: {fileID: 9100000, guid: 322327c4a84314940a8818a4c01df6c4, type: 2}
+  eyesUp: {fileID: 21300000, guid: afc587f9ae5ffde49bfa70dda05b45a2, type: 3}
+  eyesDown: {fileID: 21300000, guid: be5f9d1033667954589e8649406053c1, type: 3}
+  eyesLeft: {fileID: 21300000, guid: f055db6c99d5ed44aaeee586f1dff1de, type: 3}
+  eyesRight: {fileID: 21300000, guid: a02faf81762a4a046a928b443e46ad3d, type: 3}
+  defaultSprite: {fileID: 21300024, guid: a8df8afe7ddac794088ec09605211886, type: 3}
+  lives: 3
+  canMove: 1
 --- !u!212 &1984463459
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33991,6 +33926,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1984463460
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984463454}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1984601646
 GameObject:
   m_ObjectHideFlags: 0
@@ -34021,7 +33975,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 280
+  m_RootOrder: 276
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1984601648
 SpriteRenderer:
@@ -34309,7 +34263,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 169
+  m_RootOrder: 167
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2003332836
 SpriteRenderer:
@@ -34405,7 +34359,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 151
+  m_RootOrder: 149
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2014583865
 SpriteRenderer:
@@ -34501,7 +34455,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 141
+  m_RootOrder: 139
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2014647232
 SpriteRenderer:
@@ -34693,7 +34647,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 156
+  m_RootOrder: 154
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2024318592
 SpriteRenderer:
@@ -34789,7 +34743,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 176
+  m_RootOrder: 174
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2024734058
 SpriteRenderer:
@@ -34981,7 +34935,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 222
+  m_RootOrder: 219
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2031065298
 SpriteRenderer:
@@ -35077,7 +35031,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 213
+  m_RootOrder: 210
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2041210846
 SpriteRenderer:
@@ -35173,7 +35127,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 147
+  m_RootOrder: 145
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2057839278
 SpriteRenderer:
@@ -35253,7 +35207,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point (29)
   m_TagString: TurningPoints
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -35288,6 +35242,8 @@ MonoBehaviour:
   - {fileID: 1213653798}
   directionToNeighborTurningPoint: []
   isPortal: 0
+  ghostHouse: 0
+  ghostHouseEntrance: 0
   destinationPortal: {fileID: 0}
 --- !u!58 &2066427119
 CircleCollider2D:
@@ -35335,7 +35291,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 190
+  m_RootOrder: 188
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2083815937
 SpriteRenderer:
@@ -35431,7 +35387,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 127
+  m_RootOrder: 125
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2095683374
 SpriteRenderer:
@@ -35815,7 +35771,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 277
+  m_RootOrder: 273
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2111163123
 SpriteRenderer:
@@ -36007,7 +35963,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 137
+  m_RootOrder: 135
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2115484523
 SpriteRenderer:
@@ -36103,7 +36059,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 170
+  m_RootOrder: 168
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2118750454
 SpriteRenderer:
@@ -36199,7 +36155,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 166
+  m_RootOrder: 164
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2127465104
 SpriteRenderer:
@@ -36295,7 +36251,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986480944}
-  m_RootOrder: 219
+  m_RootOrder: 216
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2133895909
 SpriteRenderer:
